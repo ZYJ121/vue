@@ -5,12 +5,20 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import Vuex from 'vuex';
+import Vuex from 'vuex'
 
-Vue.use(ElementUI)
+import waterfall from 'vue-waterfall2'
+Vue.use(waterfall);
+// import VueMasonryPlugin from 'vue-masonry';
+
+Vue.use(ElementUI);
 Vue.use(Vuex);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+// Vue.use(VueResouse);
+// Vue.use(VueMasonryPlugin);
+
 
 const store = new Vuex.Store({
   state: {
