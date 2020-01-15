@@ -41,6 +41,11 @@ new Vue({
   components: {App},
   template: '<App/>'
 });
+// new Vue({
+//   el: '#app',
+//   router,
+//   render: h => h(Navi)
+// })
 
 // router.beforeEach((to, from, next) => {
 //   // if (to.name === 'login') {

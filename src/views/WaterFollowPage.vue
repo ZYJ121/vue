@@ -2,7 +2,7 @@
   <div class="main">
     <el-container>
       <el-aside class="sidebar-container">
-        <sidebar :activeIndex="activeIndex" :activeGroup="activeGroup"></sidebar>
+        <!--<sidebar :activeIndex="activeIndex" :activeGroup="activeGroup"></sidebar>-->
       </el-aside>
       <el-main class="page-able">
         <div class="container-water-fall">
@@ -64,8 +64,8 @@
                       </div>
                       <div style="margin-left: 5%;    font-weight: 700;">
                         <span>{{item.userName}}</span>
-                        <div>创建时间：{{ item.createdAt | formatDate }}</div>
-                        <div v-if="item.deletedAt != null">删除时间：{{ item.deletedAt | formatDate }}</div>
+                        <div>创建时间：{{ item.createdAt}}</div>
+                        <div v-if="item.deletedAt != null">删除时间：{{ item.deletedAt }}</div>
 
                       </div>
                     </div>
@@ -464,88 +464,13 @@
     },
     methods: {
       scroll(scrollData) {
-        // console.log(scrollData)
       },
       h(){
         console.log("wowowowo");
       },
       loadmore(index) {
-        // this.data = this.data.concat(this.data)
         console.log("1111111111111111111");
         this.h();
-        // this.evaluationData = [{
-        //   "id": 4,
-        //   "goodsOrderItemId": 43613,
-        //   "skuId": 2,
-        //   "userId": 209051,
-        //   "state": 0,
-        //   "content": "很棒，很棒，很棒哦！我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验我最满意的一次购物体验",
-        //   "pictures": null,
-        //   "totalScore": 4.0,
-        //   "dimensionOne": 3.0,
-        //   "dimensionTwo": 5.0,
-        //   "dimensionThree": 5.0,
-        //   "obtainCb": 15,
-        //   "favoritesCount": 3,
-        //   "commentCount": 1,
-        //   "deletedAt": 1559274983000,
-        //   "createdAt": 1558596924000,
-        //   "dimensionName": "[\"质量\",\"口感\",\"物流\"]",
-        //   "userName": "liaotianhua",
-        //   "goodName": "美国ON 乳清蛋白粉 5磅 香草味",
-        //   "selectTags": [{"id": 38, "name": "质量赞", "type": "评价标签", "priority": 0}, {
-        //     "id": 39,
-        //     "name": "效果显著",
-        //     "type": "评价标签",
-        //     "priority": 0
-        //   }, {"id": 41, "name": "口感细腻", "type": "评价标签", "priority": 0}, {
-        //     "id": 42,
-        //     "name": "味道适中",
-        //     "type": "评价标签",
-        //     "priority": 0
-        //   }, {"id": 47, "name": "全部", "type": "评价标签", "priority": 10}, {
-        //     "id": 50,
-        //     "name": "好评",
-        //     "type": "评价标签",
-        //     "priority": 7
-        //   }]
-        // }, {
-        //   "id": 1,
-        //   "goodsOrderItemId": 44530,
-        //   "skuId": 2,
-        //   "userId": 10,
-        //   "state": 0,
-        //   "content": "很棒，很棒，很棒哦！ ",
-        //   "pictures": "http://7xoin6.com1.z0.glb.clouddn.com/1558431270539.jpg?w=1080&h=1080;http://7xoin6.com1.z0.glb.clouddn.com/1558431287733.jpg?w=1080&h=1080",
-        //   "totalScore": 4.0,
-        //   "dimensionOne": 4.0,
-        //   "dimensionTwo": 3.0,
-        //   "dimensionThree": 5.0,
-        //   "obtainCb": 35,
-        //   "favoritesCount": 0,
-        //   "commentCount": 4,
-        //   "deletedAt": null,
-        //   "createdAt": 1558434982000,
-        //   "dimensionName": "[\"质量\",\"口感\",\"物流\"]",
-        //   "userName": "\uD83D\uDC49sir\uD83D\uDC8E",
-        //   "goodName": "美国ON 乳清蛋白粉 5磅 香草味",
-        //   "selectTags": [{"id": 38, "name": "质量赞", "type": "评价标签", "priority": 0}, {
-        //     "id": 39,
-        //     "name": "效果显著",
-        //     "type": "评价标签",
-        //     "priority": 0
-        //   }, {"id": 43, "name": "物流态度好", "type": "评价标签", "priority": 0}, {
-        //     "id": 47,
-        //     "name": "全部",
-        //     "type": "评价标签",
-        //     "priority": 10
-        //   }, {"id": 49, "name": "有图", "type": "评价标签", "priority": 8}, {
-        //     "id": 50,
-        //     "name": "好评",
-        //     "type": "评价标签",
-        //     "priority": 7
-        //   }]
-        // }]
       },
 
 
