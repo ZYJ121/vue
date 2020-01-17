@@ -96,14 +96,14 @@
             //         });
             // },
             onSubmit() {
+                let url = this.$url.API_BASE_URL + "/menu/getAll";
                 $.ajax({
                     xhrFields: {
                         withCredentials: true
                     },
                     type: 'get',
-                    // url: process.env.API_BASE_URL + "/menu/getAll",
-                    url: "http://localhost:1211/menu/getAll",
-                    // data: {data: JSON.stringify(this.form)},
+                    url: url,
+                    data: {data: JSON.stringify(this.form)},
                     success: function (res) {
                         console.log(res);
                     }

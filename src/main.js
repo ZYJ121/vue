@@ -8,7 +8,14 @@ import 'element-ui/lib/theme-chalk/index.css'
 import Vuex from 'vuex'
 
 import waterfall from 'vue-waterfall2'
+
+/**
+ * url地址配置
+ */
+import url from '@/server'
+Vue.prototype.$url = url;
 Vue.use(waterfall);
+
 // import VueMasonryPlugin from 'vue-masonry';
 
 Vue.use(ElementUI);
