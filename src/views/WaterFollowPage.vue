@@ -1,6 +1,6 @@
 <template>
     <el-container style="height: 100%;">
-        <el-header>Main</el-header>
+        <!--<el-header>Main</el-header>-->
         <el-main class="overflow-auto">
             <div class="container-water-fall">
                 <waterfall :col='col'  :data="evaluationData"
