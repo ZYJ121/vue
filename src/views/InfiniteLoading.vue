@@ -1,7 +1,7 @@
 <template>
   <!--<div>-->
     <ul class="infinite-list" v-infinite-scroll="load">
-      <li v-for="i in count" class="infinite-list-item">{{ i }}</li>
+      <li v-for="i in count" class="infinite-list-item" key="index">{{ i }}</li>
     </ul>
   <!--</div>-->
     <!--<xdh-scroll :on-reach-bottom="handleReachBottom">-->

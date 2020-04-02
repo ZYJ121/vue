@@ -6,16 +6,17 @@ import index from '@/views/index'
 import WaterFollowPage from '@/views/WaterFollowPage'
 import InfiniteLoading from '@/views/InfiniteLoading'
 import indexDrawer from '@/views/drawer/indexDrawer'
+import Order from '@/views/order/Order'
 
 Vue.use(Router)
 
 export default new Router({
     routes: [
-        {
-          path: '/',
-          name: 'index',
-          component: index
-        },
+        // {
+        //   path: '/',
+        //   name: 'index',
+        //   component: index
+        // },
         {
             path: '/login',
             name: 'login',
@@ -40,6 +41,11 @@ export default new Router({
             path: '/indexDrawer',
             name: 'indexDrawer',
             component: indexDrawer
+        },
+        {
+            path: '/Order',
+            name: 'Order',
+            component: Order
         },
     ]
 })

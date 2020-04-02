@@ -6,7 +6,7 @@
                 <waterfall :col='col'  :data="evaluationData"
                            @loadmore="loadmore" @scroll="scroll">
                     <template>
-                        <div class="cell-item" v-for="(item,index) in evaluationData">
+                        <div class="cell-item" v-for="(item,index) in evaluationData" key="index">
                             <div class="item-body">
                                 <el-card :body-style="{ padding: '0px' }">
                                     <div slot="header" class="header">
@@ -86,13 +86,13 @@
 
                                         <el-button type="success" size="small" title="通过" circle
                                                    icon="el-icon-check" v-if="item.state != 0"
-                                                   @click="examine(false);id = item.id ;examineState = 0"></el-button>
+                                                   @click="examine(false),id = item.id ,examineState = 0"></el-button>
                                         <el-button type="warning" size="small" title="删除仅用户可见" circle
                                                    icon="el-icon-close" v-if="item.state != 3"
-                                                   @click="dialogFormVisible = true;id = item.id ;examineState = 3"></el-button>
+                                                   @click="dialogFormVisible = true,id = item.id ,examineState = 3"></el-button>
                                         <el-button type="danger" size="small" title="删除不可见" circle
                                                    icon="el-icon-delete" v-if="item.state != 2"
-                                                   @click="dialogFormVisible = true;id = item.id;examineState = 2"></el-button>
+                                                   @click="dialogFormVisible = true,id = item.id,examineState = 2"></el-button>
 
                                     </div>
                                 </el-card>

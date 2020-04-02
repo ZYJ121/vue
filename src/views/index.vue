@@ -27,12 +27,12 @@
             default-active="$route.path"
             class="el-menu-vertical-demo"
             router >
-            <el-submenu  v-for="(data,index) in datas" index="data.url" >
+            <el-submenu  v-for="(data,index) in datas" index="data.url"  key="index">
                 <template slot="title">
                     <i class="el-icon-location"></i>
                     <span slot="title">{{data.name}}</span>
                 </template>
-                <el-menu-item v-for="(child,index) in data.childs" index="child.url">{{child.name}}</el-menu-item>
+                <el-menu-item v-for="(child,index) in data.childs" index="child.url" key="index">{{child.name}}</el-menu-item>
                 <!--<el-menu-item index="1-2">选项2</el-menu-item>-->
             </el-submenu>
 
@@ -50,8 +50,6 @@
             <!--</el-menu-item>-->
         </el-menu>
         <el-button type="primary" @click="onSubmit">新建</el-button>
-        <!--<el-button type="primary" @click="save">新建</el-button>-->
-        <!--<index-drawer v-if="drawerState" v-on:drawerState="indexDrawer"></index-drawer>-->
 
     </div>
 </template>

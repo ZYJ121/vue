@@ -9,11 +9,17 @@ import Vuex from 'vuex'
 
 import waterfall from 'vue-waterfall2'
 
+
 /**
  * url地址配置
  */
 import url from '@/server'
+//引入公共js https://www.cnblogs.com/CinderellaStory/p/11512274.html
+import dateFormate from './js/DateFormate'
+Vue.prototype.$dateFormate=dateFormate;
 Vue.prototype.$url = url;
+
+
 Vue.use(waterfall);
 
 // import VueMasonryPlugin from 'vue-masonry';
