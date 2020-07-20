@@ -7,6 +7,7 @@ import WaterFollowPage from '@/views/WaterFollowPage'
 import InfiniteLoading from '@/views/InfiniteLoading'
 import indexDrawer from '@/views/drawer/indexDrawer'
 import Order from '@/views/order/Order'
+import DramaSeries from '@/Views/DramaSeries'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
             path: '/Order',
             name: 'Order',
             component: Order
+        },
+        {
+            path: '/DramaSeries',
+            name: 'DramaSeries',
+            component: DramaSeries
         },
     ]
 })

@@ -16,7 +16,7 @@
                             <!--<el-menu-item-group>-->
                                 <!--<span slot="title">分组一</span>-->
                                 <el-menu-item index="/WaterFollowPage">选项1</el-menu-item>
-                                <el-menu-item index="1-2">选项2</el-menu-item>
+                                <el-menu-item index="/DramaSeries">追剧</el-menu-item>
                             <!--</el-menu-item-group>-->
                             <!--<el-menu-item-group title="分组2">-->
                                 <!--<el-menu-item index="1-3">选项3</el-menu-item>-->
@@ -41,6 +41,10 @@
                         <el-menu-item index="/order">
                             <i class="el-icon-setting"></i>
                             <span slot="title">订单</span>
+                        </el-menu-item>
+                        <el-menu-item index="/DramaSeries">
+                            <i class="el-icon-setting"></i>
+                            <span slot="title">追剧</span>
                         </el-menu-item>
                     </el-menu>
                 </el-aside>
@@ -89,7 +93,7 @@
     }
 
     .el-main {
-        background-color: #E9EEF3;
+        background-color: #ffffff;
         color: #333;
         /*text-align: center;
         line-height: 160px;*/

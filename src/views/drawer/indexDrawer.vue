@@ -85,8 +85,8 @@
                         withCredentials: true
                     },
                     type: 'post',
-                    // url: process.env.API_BASE_URL + "/admin_user/login",
-                    url: "http://localhost:1211/menu/getAll",
+                    url: this.$url.API_BASE_URL + "/menu/getAll",
+                    // url: "http://localhost:1211/menu/getAll",
                     data: {data: JSON.stringify(this.form)},
                     success: function (res) {
                         console.log(res);
