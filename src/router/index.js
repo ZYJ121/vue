@@ -7,12 +7,12 @@ import WaterFollowPage from '@/views/WaterFollowPage'
 import InfiniteLoading from '@/views/InfiniteLoading'
 import indexDrawer from '@/views/drawer/indexDrawer'
 import Order from '@/views/order/Order'
-import DramaSeries from '@/Views/DramaSeries'
+import DramaSeries from '@/views/DramaSeries'
 
 Vue.use(Router)
-export const loadView = (view) => {
-    return (resolve) => require([`@/views/${view}`], resolve)
-};
+// export const loadView = (view) => {
+//     return (resolve) => require([`@/views/${view}`], resolve)
+// };
 export default new Router({
     routes: [
         // {
